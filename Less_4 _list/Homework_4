@@ -1,13 +1,13 @@
 
 print("Введите Ваш рост в метрах: ")
-h = float(input())
+h = float(input())                           # вводим рост
 print("Введите Ваш вес в килограммах: ")
-m = float(input())
+m = float(input())                           # вводим вес    
 
-I = round(m / h ** 2)
+I = round(m / h ** 2)                        # высчитываем BMI
 print('Ваш индекс массы тела:', I)
 print()
-before = I - 10
+before = I - 10                              # производим рассчеты для построения шкалы  
 after = 60 - I
 print("10", "=" * before +  "|" + "=" * after, "60")
 
